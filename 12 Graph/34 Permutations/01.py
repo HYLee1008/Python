@@ -1,5 +1,5 @@
 ### Return permutations using DFS
-###
+### Be aware of reference
 def permute(nums):
     results = []
     prev_elements = []
