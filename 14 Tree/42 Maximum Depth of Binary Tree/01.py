@@ -1,5 +1,6 @@
 ### Get maximum depth of given binary tree using iterative BFS
 ###
+from datastructure import *
 import collections
 
 def max_depth(root):
@@ -19,3 +20,12 @@ def max_depth(root):
             if cur_root.right:
                 queue.append(cur_root.right)
     return depth
+
+
+input = TreeNode(val=3)
+input.left = TreeNode(val=9)
+input.right = TreeNode(val=20)
+input.right.left = TreeNode(val=15)
+input.right.right = TreeNode(val=7)
+
+print(max_depth(input))
